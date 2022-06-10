@@ -95,13 +95,22 @@
                                               <tr>
                                                  <td style="word-break: break-word; font-family: Arial,sans-serif; border-collapse: collapse; line-height: 25px; font-size: 25px;" height="25px"> </td>
                                               </tr>
+
                                               <tr>
+                                                <tbody>
+                                                   <tr>
+                                                   <td style="background-color: #ccffcc; width: 620px;">
+                                                   <p style="padding: 5px 5px 5px;"><strong>Solicitação</strong>: ##ticket.title## <br />##ticket.content##</p>
+                                                   </td>
+                                                   </tr>
+                                                   </tbody>
                                                  <td class="x_primary-font x_text" style="word-break: break-word; font-family: Arial,sans-serif; font-size: 14px; color: #333333; line-height: 170%; border-collapse: collapse;">
                                                     <div id="x_text4" class="x_mktoText">
                                                        <p style="text-align: justify;"><span style="font-size: 16px;"> Olá ##ticket.authors##, </span></p>
-                                                       <p style="text-align: justify;"><span style="font-size: 16px;"> Informamos que foi aberto um novo registro no Sistema de Atendimento a usuários com o título de "<strong>##ticket.title##</strong>". Na seguinte data: ##bilhete.data de criação## </span></p>
+                                                       <p style="text-align: justify;"><span style="font-size: 16px;"> Informamos que foi aberto um novo registro no Sistema de Atendimento a usuários! Na seguinte data: ##ticket.creationdate##</span></p>
                                                        <p style="text-align: justify;"><span style="font-size: 16px;"> Este atendimento sera gerenciado sob o seguinte protocolo:</span></p>
                                                        <center><strong><a class="x_primary-font x_button" style="display: inline-block; font-size: 14px; font-family: Arial,sans-serif; color: rgb(255, 255, 255); text-decoration: none; background-color: #be0303b4; border-bottom-left-radius: 4px; border-top-left-radius: 4px; border-bottom-right-radius: 4px; border-top-right-radius: 4px; padding: 12px 18px 12px 18px; border: 1px solid #FFFFFF;" href="##ticket.url##" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable"> &lt; ##ticket.id## &gt;</a></strong></center>
+                                                      
                                                        <center>##IFticket.storestatus=5##
                                                          <table style="border: 1px solid #f4f4f4; border-collapse: collapse; font-size: 12px; width: 100%;" cellpadding="0">
                                                          <tbody>
@@ -117,10 +126,28 @@
                                                          </tbody>
                                                          </table>
                                                          <br />##lang.ticket.autoclosewarning## ##ENDIFticket.storestatus## ##FOREACHfollowups##</center>
+                                                         <table style="background-color: #e0e0e0; background-image: url('http://10.42.42.100/glpi/pics/timeline/followup.png'); background-repeat: no-repeat; background-position: right; border: 1px solid #f4f4f4; border-collapse: collapse; font-size: 12px; width: 100%;" cellpadding="0">
+                                                            <tbody>
+                                                            <tr>
+                                                            <td colspan="2">
+                                                            <p style="padding: 5px 5px 5px;"><strong>Acompanhamento</strong>: [##followup.date##] - ##followup.description##</p>
+                                                            </td>
+                                                            </tr>
+                                                            <tr style="border: 1px solid #f4f4f4; border-collapse: collapse;">
+                                                            <td style="width: 168px;"><strong>##lang.followup.isprivate## :</strong></td>
+                                                            <td style="width: 452px;" align="left">##followup.isprivate##</td>
+                                                            </tr>
+                                                            <tr style="border: 1px solid #f4f4f4; border-collapse: collapse;">
+                                                            <td style="width: 168px;"><strong>##lang.followup.author## :</strong></td>
+                                                            <td style="width: 452px;" align="left">##followup.author##</td>
+                                                            </tr>
+                                                            </tbody>
+                                                            </table>
+                                                            <br />##ENDFOREACHfollowups#
                                                        <p><span style="font-size: 16px;">Sinta-se a vontade para acessar o Sistema para interagir ou buscar maiores detalhes sobre este atendimento a qualquer momento! </span></p>
                                                        <p><span style="font-size: 16px;"> Aqui estão algumas informacões sobre o chamado:</span></p>
                                                        <ul>
-                                                          <li><span style="font-size: 14px;"><b>Origem:</b> ##ticket.requesttype##</span></li>
+                                                          <li><span style="font-size: 14px;"><b>Tipo:</b> ##ticket.type##</span></li>
                                                           <li><span style="font-size: 14px;"> <b>Categoria:</b>
                                                             ##IFticket.category##
                                                             ##ticket.category## 
@@ -128,8 +155,8 @@
                                                             ##ELSEticket.category## 
                                                             ##lang.ticket.nocategoryassigned##
                                                              ##ENDELSEticket.category##</span></li>
-                                                          <li><span style="font-size: 14px;"> <b>Urgencia</b>  ##ticket.urgency## </span></li>
-                                                          <li><span style="font-size: 14px;"> <b>Prioridade</b> ##ticket.priority##</span></li>
+                                                          <li><span style="font-size: 14px;"> <b>Urgencia:</b>  ##ticket.urgency## </span></li>
+                                                          <li><span style="font-size: 14px;"> <b>Localização:</b> ##ticket.location##</span></li>
                                                        </ul>
                                                     </div>
                                                  </td>
