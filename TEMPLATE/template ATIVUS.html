@@ -1,0 +1,232 @@
+<style>
+   .image{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+   }
+   .imgLogo{
+      width: 12rem;
+   }
+   .titulo{
+      color: #ffffff;
+      font-size: 1.5rem;
+   }
+   .subtitulo{
+      color: #ffffff;
+      font-size: 1.125rem;
+   }
+   .informacao{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+   }
+   .header__cabecalho{
+      display: flex;
+      justify-content: space-between;
+
+   }
+   .header{
+      font-family: Arial, sans-serif;
+      font-size: 3.75rem; 
+      line-height: 1.875rem;
+      border-collapse: collapse;
+      padding: 1rem 0 1rem 0;
+   }
+
+   .status{
+      font-size: 1rem; 
+      color: white; 
+      background-color: #aa0101;
+      padding: 0.625rem;
+   }
+   .status__info{
+      padding: 0.625rem;
+   }
+   
+</style>
+
+<table style="border-spacing: 0px; border-collapse: collapse; width: 100%;" border="0" width="100%" cellspacing="0" cellpadding="0">
+   <tbody>
+      <tr>
+         <td class="x_outer" style="font-family: Arial, sans-serif; min-width: 600px; border-collapse: collapse; background-color: #ebeff2; width: 100%;" valign="top">
+            <table id="x_boxing" class="x_m_boxing" style="border-spacing: 0; border-collapse: collapse; margin: 0 auto 0 auto;" border="0" width="640" cellspacing="0" cellpadding="0" align="center">
+               <tbody>
+                  <tr>
+                     <td id="x_template-wrapper" class="x_mktoContainer x_boxedbackground" style="word-break: break-word; font-family: Arial,sans-serif; border-collapse: collapse;">
+                        <p> </p>
+                         <table id="x_hero" class="x_mktoModule x_m_hero" style="border-spacing: 0; border-collapse: collapse;" border="0" width="100%" cellspacing="0" cellpadding="0">
+                            <tbody>
+                               <tr>
+                                  <td class="x_background" valign="top" bgcolor="#232D37" width="640" height="99px" data-imagetype="External">
+                                     <center>
+                                        <table class="x_table600" style="border-spacing: 0; border-collapse: collapse; margin: 0 auto 0 auto;" border="0" width="580" cellspacing="0" cellpadding="0" align="center">
+                                           <tbody>
+                                              <tr>
+                                                 <td class="header" >
+                                                    <div id="x_title" class="header__cabecalho">
+                                                         <img class="imgLogo" src="TesteAtivus.png" alt="Logo Ativus"/>
+                                                      <div class="informacao">
+                                                         <span class="titulo"><b>Ativus Gestão Empresarial </b></span>
+                                                         <span class="subtitulo"><b></b>Central de Chamados</b></span>
+                                                      </div>
+                                                    </div>
+                                                 </td>
+                                              </tr>
+                                           </tbody>
+                                        </table>
+                                     </center>
+                                     <tr>
+                                       <tr class="status">
+                                          <td class="status__info"><strong>Status</strong>: ##ticket.status## </td>
+                                    </tr>
+                                  </td>
+                               </tr>
+                            </tbody>
+                         </table>
+                         
+                         <table id="x_free-text" class="x_mktoModule x_m_free-text" style="border-spacing: 0; border-collapse: collapse;" border="0" width="100%" cellspacing="0" cellpadding="0" align="center">
+                            <tbody>
+                               <tr>
+                                  <td style="word-break: break-word; font-family: Arial,sans-serif; border-collapse: collapse; background-color: #ffffff;" valign="top" bgcolor="#FFFFFF">
+                                     <center>
+                                        <table class="x_table600" style="border-spacing: 0; border-collapse: collapse; margin: 0 auto 0 auto;" border="0" width="580" cellspacing="0" cellpadding="0" align="center">
+                                           <tbody>
+                                              <tr>
+                                                 <td style="word-break: break-word; font-family: Arial,sans-serif; border-collapse: collapse; line-height: 25px; font-size: 25px;" height="25px"> </td>
+                                              </tr>
+                                              <tr>
+                                                 <td class="x_primary-font x_text" style="word-break: break-word; font-family: Arial,sans-serif; font-size: 14px; color: #333333; line-height: 170%; border-collapse: collapse;">
+                                                    <div id="x_text4" class="x_mktoText">
+                                                       <p style="text-align: justify;"><span style="font-size: 16px;"> Olá ##ticket.authors##, </span></p>
+                                                       <p style="text-align: justify;"><span style="font-size: 16px;"> Informamos que foi aberto um novo registro no Sistema de Atendimento a usuários com o título de "<strong>##ticket.title##</strong>". Na seguinte data: ##bilhete.data de criação## </span></p>
+                                                       <p style="text-align: justify;"><span style="font-size: 16px;"> Este atendimento sera gerenciado sob o seguinte protocolo:</span></p>
+                                                       <center><strong><a class="x_primary-font x_button" style="display: inline-block; font-size: 14px; font-family: Arial,sans-serif; color: rgb(255, 255, 255); text-decoration: none; background-color: #be0303b4; border-bottom-left-radius: 4px; border-top-left-radius: 4px; border-bottom-right-radius: 4px; border-top-right-radius: 4px; padding: 12px 18px 12px 18px; border: 1px solid #FFFFFF;" href="##ticket.url##" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable"> &lt; ##ticket.id## &gt;</a></strong></center>
+                                                       <center>##IFticket.storestatus=5##
+                                                         <table style="border: 1px solid #f4f4f4; border-collapse: collapse; font-size: 12px; width: 100%;" cellpadding="0">
+                                                         <tbody>
+                                                         <tr>
+                                                         <td style="background-color: #9fd6ed; background-image: url('http://10.42.42.100/glpi/pics/timeline/solution.png'); background-repeat: no-repeat; background-position: right; border: 1px solid #f4f4f4; border-collapse: collapse; width: 620px;" colspan="2">
+                                                         <p style="padding: 5px 5px 5px;"><strong>Solução</strong>: <br />##ticket.solution.description##</p>
+                                                         </td>
+                                                         </tr>
+                                                         <tr style="border: 1px solid #f4f4f4; border-collapse: collapse;">
+                                                         <td><strong>##lang.ticket.solvedate## :</strong> ##ticket.solvedate##</td>
+                                                         <td align="right"><a style="text-decoration: none; color: #000; padding: 10px 10px; font-weight: bold; text-align: center; cursor: pointer; display: inline-block; background-color: #9fd6ed!important;" href="##ticket.urlapprove##"> Aprovar solução &gt;&gt;</a></td>
+                                                         </tr>
+                                                         </tbody>
+                                                         </table>
+                                                         <br />##lang.ticket.autoclosewarning## ##ENDIFticket.storestatus## ##FOREACHfollowups##</center>
+                                                       <p><span style="font-size: 16px;">Sinta-se a vontade para acessar o Sistema para interagir ou buscar maiores detalhes sobre este atendimento a qualquer momento! </span></p>
+                                                       <p><span style="font-size: 16px;"> Aqui estão algumas informacões sobre o chamado:</span></p>
+                                                       <ul>
+                                                          <li><span style="font-size: 14px;"><b>Origem:</b> ##ticket.requesttype##</span></li>
+                                                          <li><span style="font-size: 14px;"> <b>Categoria:</b>
+                                                            ##IFticket.category##
+                                                            ##ticket.category## 
+                                                            ##ENDIFticket.category## 
+                                                            ##ELSEticket.category## 
+                                                            ##lang.ticket.nocategoryassigned##
+                                                             ##ENDELSEticket.category##</span></li>
+                                                          <li><span style="font-size: 14px;"> <b>Urgencia</b>  ##ticket.urgency## </span></li>
+                                                          <li><span style="font-size: 14px;"> <b>Prioridade</b> ##ticket.priority##</span></li>
+                                                       </ul>
+                                                    </div>
+                                                 </td>
+                                              </tr>
+                                              <tr>
+                                                 <td style="word-break: break-word; font-family: Arial,sans-serif; border-collapse: collapse; line-height: 5px; font-size: 5px;" height="5px"> </td>
+                                              </tr>
+                                           </tbody>
+                                        </table>
+                                     </center>
+                                  </td>
+                               </tr>
+                            </tbody>
+                         </table>
+                         <table id="x_standard-image" class="x_mktoModule x_m_standard-image" style="border-spacing: 0; border-collapse: collapse;" border="0" width="100%" cellspacing="0" cellpadding="0" align="center">
+                            <tbody>
+                               <tr>
+                                  <td style="word-break: break-word; font-family: Arial,sans-serif; border-collapse: collapse; background-color: #ffffff;" valign="top" bgcolor="#FFFFFF">
+                                     <center>
+                                        <table class="x_table600" style="border-spacing: 0; border-collapse: collapse; margin: 0 auto 0 auto;" border="0" width="640" cellspacing="0" cellpadding="0" align="center">
+                                           <tbody>
+                                              <tr>
+                                                 <td style="word-break: break-word; font-family: Arial,sans-serif; border-collapse: collapse; line-height: 20px; font-size: 20px;" height="20px"> </td>
+                                              </tr>
+                                           </tbody>
+                                        </table>
+                                     </center>
+                                  </td>
+                               </tr>
+                            </tbody>
+                         </table>
+                         <table id="x_title5" class="x_mktoModule x_m_title" style="border-spacing: 0; border-collapse: collapse; font-family: Arial,sans-serif; text-align: center; color: #32ad84;" border="0" width="100%" cellspacing="0" cellpadding="0" align="center">
+                            <tbody>
+                               <tr>
+                                  <td class="x_background" style="word-break: break-word; font-family: Arial,sans-serif; border-collapse: collapse; background-color: #ffffff;" valign="top" bgcolor="#ffffff"> </td>
+                               </tr>
+                            </tbody>
+                         </table>
+                         <table id="x_footer" class="x_mktoModule x_m_footer" style="border-spacing: 0; border-collapse: collapse;" border="0" width="100%" cellspacing="0" cellpadding="0" align="center">
+                            <tbody>
+                               <tr>
+                                  <td style="word-break: break-word; font-family: Arial,sans-serif; border-collapse: collapse; background-color: #232d37; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;" valign="top" bgcolor="#232D37">
+                                     <center>
+                                        <table class="x_table600" style="border-spacing: 0; border-collapse: collapse; margin: 0 auto 0 auto;" border="0" width="580" cellspacing="0" cellpadding="0" align="center">
+                                           <tbody>
+                                              <tr>
+                                                 <td style="word-break: break-word; font-family: Arial,sans-serif; border-collapse: collapse; line-height: 20px; font-size: 20px;" height="20px"> </td>
+                                              </tr>
+                                              <tr>
+                                                 <td style="word-break: break-word; font-family: Arial,sans-serif; border-collapse: collapse;">
+                                                    <center>
+                                                       <table class="x_table1-3" style="border-spacing: 0px; border-collapse: collapse; height: 119px;" border="0" width="389" cellspacing="0" cellpadding="0" align="left">
+                                                          <tbody>
+                                                             <tr style="height: 16px;">
+                                                                <td style="font-family: Arial, sans-serif; border-collapse: collapse; height: 16px; width: 387px;"><span style="color: #83909e; font-size: 12px;"><strong>Ativus Gestao Empresarial</strong> Central Helpdesk<br /><span class="LrzXr">R. Marechal Deodoro Bairro: Sao José Nº2081<br /></span></span><span style="color: #83909e; font-size: 12px;"><span class="LrzXr"> 85555-000, Palmas, PR, Brasil</span></span></td>
+                                                             </tr>
+                                                          </tbody>
+                                                       </table>
+                                                    </center>
+                                                 </td>
+                                              </tr>
+                                              <tr>
+                                                 <td style="word-break: break-word; font-family: Arial,sans-serif; border-collapse: collapse;"> </td>
+                                              </tr>
+                                           </tbody>
+                                        </table>
+                                     </center>
+                                  </td>
+                               </tr>
+                            </tbody>
+                         </table>
+                         <table id="x_blankSpacea6849bce-b5d6-421a-9901-67787c142474" class="x_mktoModule x_m_blankSpace" style="border-spacing: 0; border-collapse: collapse;" border="0" width="100%" cellspacing="0" cellpadding="0" align="center">
+                            <tbody>
+                               <tr>
+                                  <td style="word-break: break-word; font-family: Arial,sans-serif; border-collapse: collapse; background-color: #ebeff2;" valign="top" bgcolor="#EBEFF2">
+                                     <table class="x_table600" style="border-spacing: 0px; border-collapse: collapse; margin: 0px auto; height: 61px;" border="0" width="452" cellspacing="0" cellpadding="0" align="center">
+                                        <tbody>
+                                           <tr>
+                                              <td class="x_primary-font x_title" style="font-family: Arial, sans-serif; font-size: 60px; line-height: 90%; color: #32ad84; text-align: left; border-collapse: collapse; width: 450px;">
+                                                 <div id="x_copyright" class="x_mktoText">
+                                                    <div class="x_p1" style="text-align: center;"><span style="color: #828f9d; font-size: 12px;"> © 2022 Ativus Gestao Empresarial - Todos os direitos reservados. </span></div>
+                                                 </div>
+                                              </td>
+                                           </tr>
+                                        </tbody>
+                                     </table>
+                                  </td>
+                               </tr>
+                            </tbody>
+                         </table>
+                      </td>
+                   </tr>
+                </tbody>
+             </table>
+          </td>
+       </tr>
+    </tbody>
+ </table>
+ 
+ 
